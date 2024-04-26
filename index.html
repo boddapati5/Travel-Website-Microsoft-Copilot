@@ -26,6 +26,26 @@
             padding: 20px;
         }
 
+        /* Navigation menu styles */
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            margin-right: 20px;
+        }
+
+        /* Hero section styles */
+        .hero {
+            background-image: url('your-hero-image.jpg');
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+            padding: 100px 0;
+        }
+
         /* Destinations section styles */
         .destination {
             margin-bottom: 40px;
@@ -60,21 +80,34 @@
     <div class="container">
         <header>
             <h1>Explore the World</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Destinations</a></li>
+                    <li><a href="#">Travel Guides</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="darkModeToggle">Toggle Dark Mode</button>
         </header>
 
-        <!-- Destinations section -->
+        <div class="hero">
+            <h2>Discover Your Next Adventure</h2>
+            <p>Explore breathtaking destinations and create unforgettable memories.</p>
+            <button>Book Now</button>
+        </div>
+
         <div class="destination">
             <!-- Destination content -->
             <!-- Paris, Bora Bora, Glacier National Park, etc. -->
         </div>
 
-        <!-- Travel Guides section -->
         <div class="travel-guide">
             <!-- Travel guide content -->
             <!-- Budget tips, culture experiences, etc. -->
         </div>
 
-        <!-- Contact section -->
         <div class="contact">
             <!-- Contact form, company information, and optional map -->
             <!-- Email, phone, social media links, etc. -->
@@ -82,18 +115,25 @@
 
         <footer>
             <div class="social-links">
-                <!-- Social media links -->
                 <!-- Facebook, Twitter, Instagram, LinkedIn, etc. -->
+                <!-- Include social media icons and links -->
             </div>
             <div class="newsletter-form">
-                <!-- Newsletter subscription form -->
                 <!-- Input field, subscribe button -->
+                <!-- Collect email addresses for newsletters -->
             </div>
             <div class="legal-links">
-                <!-- Legal information -->
                 <!-- Privacy Policy, Terms of Service, etc. -->
+                <!-- Include links to legal documents -->
             </div>
         </footer>
     </div>
+
+    <script>
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        darkModeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
 </body>
 </html>
