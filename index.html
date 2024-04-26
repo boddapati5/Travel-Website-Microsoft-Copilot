@@ -3,137 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel & Tourism</title>
+    <title>Travel Website</title>
     <style>
-        /* Reset some default styles */
-        body, h1, p {
-            margin: 0;
-            padding: 0;
-        }
-
-        /* Main container */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        /* Header styles */
+        /* Basic styling for the header and navigation */
         header {
             background-color: #333;
             color: #fff;
             text-align: center;
-            padding: 20px;
+            padding: 1rem;
         }
 
-        /* Navigation menu styles */
-        nav ul {
-            list-style: none;
+        nav {
             display: flex;
             justify-content: center;
+            background-color: #444;
+            padding: 0.5rem;
         }
 
-        nav li {
-            margin-right: 20px;
-        }
-
-        /* Hero section styles */
-        .hero {
-            background-image: url('your-hero-image.jpg');
-            background-size: cover;
+        nav a {
             color: #fff;
-            text-align: center;
-            padding: 100px 0;
+            text-decoration: none;
+            margin: 0 1rem;
         }
 
-        /* Destinations section styles */
+        /* Styling for main content area */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Styling for forms */
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #ff6600;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        /* Styling for destinations section */
         .destination {
-            margin-bottom: 40px;
+            margin-bottom: 2rem;
             border: 1px solid #ddd;
-            padding: 20px;
-            background-color: #f9f9f9;
+            padding: 1rem;
         }
 
-        /* Travel Guides section styles */
-        .travel-guide {
-            border: 1px solid #ddd;
-            padding: 20px;
-            background-color: #f9f9f9;
-            margin-bottom: 20px;
+        .destination img {
+            max-width: 100%;
+            height: auto;
         }
 
-        /* Contact section styles */
-        .contact {
-            margin-top: 40px;
+        /* Styling for user account section */
+        .user-account {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
         }
 
-        /* Footer styles */
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
+        /* Styling for secure payment form */
+        .payment-form {
+            max-width: 400px;
+            margin: 0 auto;
             padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
+    <header>
+        <div class="logo">Travel & Tourism</div>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Destinations</a>
+        <a href="#">Travel Guides</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
     <div class="container">
-        <header>
-            <h1>Explore the World</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Destinations</a></li>
-                    <li><a href="#">Travel Guides</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-            <button id="darkModeToggle">Toggle Dark Mode</button>
-        </header>
-
-        <div class="hero">
-            <h2>Discover Your Next Adventure</h2>
-            <p>Explore breathtaking destinations and create unforgettable memories.</p>
-            <button>Book Now</button>
+        <!-- Destinations section -->
+        <section class="destination">
+            <h2>Paris, France</h2>
+            <img src="paris.jpg" alt="Paris">
+            <p>France's magnetic City of Light is a perennial tourist destination...</p>
+            <a href="#">Explore Paris</a>
+        </section>
+        <!-- User account section -->
+        <div class="user-account">
+            <h2>User Account</h2>
+            <!-- User registration and login forms (not shown here) -->
         </div>
-
-        <div class="destination">
-            <!-- Destination content -->
-            <!-- Paris, Bora Bora, Glacier National Park, etc. -->
+        <!-- Secure payment form -->
+        <div class="payment-form">
+            <h2>Secure Payment</h2>
+            <!-- Payment form (not shown here) -->
         </div>
-
-        <div class="travel-guide">
-            <!-- Travel guide content -->
-            <!-- Budget tips, culture experiences, etc. -->
-        </div>
-
-        <div class="contact">
-            <!-- Contact form, company information, and optional map -->
-            <!-- Email, phone, social media links, etc. -->
-        </div>
-
-        <footer>
-            <div class="social-links">
-                <!-- Facebook, Twitter, Instagram, LinkedIn, etc. -->
-                <!-- Include social media icons and links -->
-            </div>
-            <div class="newsletter-form">
-                <!-- Input field, subscribe button -->
-                <!-- Collect email addresses for newsletters -->
-            </div>
-            <div class="legal-links">
-                <!-- Privacy Policy, Terms of Service, etc. -->
-                <!-- Include links to legal documents -->
-            </div>
-        </footer>
     </div>
-
-    <script>
-        const darkModeToggle = document.getElementById('darkModeToggle');
-        darkModeToggle.addEventListener('click', () => {
-            document.body.classList.toggle('dark-mode');
-        });
-    </script>
 </body>
 </html>
